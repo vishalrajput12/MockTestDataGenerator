@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+<children>
+<CheckBox fx:id="cb1" layoutX="53.0" layoutY="70.0" mnemonicParsing="false" onAction="#checkEvent" prefHeight="17.0" prefWidth="73.0" text="Name" />
+<CheckBox fx:id="cb2" layoutX="53.0" layoutY="108.0" mnemonicParsing="false" onAction="#checkEvent" text="Mobile Number" />
+<CheckBox fx:id="cb4" layoutX="53.0" layoutY="181.0" mnemonicParsing="false" onAction="#checkEvent" text="Marital Status" />
+<CheckBox fx:id="cb5" layoutX="53.0" layoutY="217.0" mnemonicParsing="false" onAction="#checkEvent" prefHeight="17.0" prefWidth="94.0" text="Street Name" />
+<CheckBox fx:id="cb3" layoutX="53.0" layoutY="146.0" mnemonicParsing="false" onAction="#checkEvent" text="City" />
+<CheckBox fx:id="cb6" layoutX="53.0" layoutY="255.0" mnemonicParsing="false" onAction="#checkEvent" text="Country" />
+
+<Button fx:id="btn" layoutX="238.0" layoutY="288.0" mnemonicParsing="false" onAction="#submitCheck" prefHeight="35.0" prefWidth="105.0" text="Submit" />
+<TextField fx:id="tb" layoutX="53.0" layoutY="288.0" prefHeight="35.0" prefWidth="165.0" promptText="Enter the Count to Generate" />
+<Label fx:id="myData" layoutX="75.0" layoutY="388.0" prefHeight="98.0" prefWidth="400.0" />
+<VBox layoutX="51.0" layoutY="334.0" prefHeight="152.0" prefWidth="293.0">
+<children>
+<ListView fx:id="listview" prefHeight="152.0" prefWidth="293.0" />
+</children>
+</VBox>
+<HBox layoutX="50.0" layoutY="10.0" prefHeight="54.0" prefWidth="413.0">
+<children>
+<Label prefHeight="55.0" prefWidth="414.0" text="Mock Test Data Generator" textAlignment="JUSTIFY">
+<font>
+<Font name="Informal Roman" size="36.0" />
+</font>
+</Label>
+</children>
+</HBox>
+
+</children>
+</AnchorPane>
